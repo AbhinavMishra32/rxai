@@ -1,2 +1,0 @@
-# rxai
-react-ai app
