@@ -12,12 +12,22 @@ export default function App() {
         </div>
         <br />
         <button className="bg-red-400 rounded-md py-3 px-8 font-black mt-4">Click</button>
-        <div tag="new-button" className="p-8 flex items-center justify-center">
-          <img src={image} alt="GTA 6 image" className="w-half h-70 object-contain static rounded-[30px] hover:shadow-2xl " />
+        <div className="p-8 flex items-center justify-center">
+          <img src={image} alt="Background Visual" className="w-half h-70 object-contain static rounded-[30px] shadow-2xl " />
           <button className="absolute backdrop-blur-md text-white px-20 py-5 rounded-3xl text-4xl font-thin shadow-2xl border border-neutral-500
           
-          transition ease-in-out delay-90 hover:*translate-y-1
+          transition-all ease-in-out
+          hover:-translate-y-1 hover:backdrop-blur-xl
+          hover:scale-110 duration-300  hover:ring  ring-offset-4  ring-opacity-50
+
+          active:scale-95 active:translate-y-0 active:backdrop-blur-md active:ring-opacity-75
           ">Button</button>
+        </div>
+        <div className = "grid gap-4 grid-cols-2">
+            <div>01</div>
+            <div>02</div>
+            <div>03</div>
+            <div>04</div>
         </div>
       </div>
     </>
