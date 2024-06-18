@@ -35,8 +35,22 @@ export default function App() {
             <div>04</div>
         </div>
 
-        <h2 className = " bg-gradient-to-r from-zinc-800 to-zinc-100">GRID BUTTONS</h2>
-        <div className = "">EEEE</div>
+        <h2 className = "bg-gradient-to-r from-zinc-800 to-zinc-100">GRID BUTTONS</h2>
+        <div className = "bg-gradient-to-r from-indigo-500 to-blue-500 p-10">EEEE</div>
+        
+        <div className = "flex justify-center items-center">
+            <div className = "border-2 w-3/5 bg-zinc-600 rounded-[30px]" >
+              <div className = "grid grid-cols-2 gap-4">
+                <img src={image} className = "object-contain rounded-l-[30px]"/>
+                <div className = "m-[40px]">
+                  <h1 className = "ml-2 text-white">Email</h1>
+                  <input type="text" className = "rounded-full ring-[2px] ring-zinc-500 mt-2 p-2"/>
+                  <h1 className = "ml-2 text-white">Password</h1>
+                  <input type="password" className = "rounded-full ring-[2px] ring-zinc-500 mt-2 p-2"/>
+                </div>
+              </div>
+          </div>
+        </div>
     </>
   )
 }
