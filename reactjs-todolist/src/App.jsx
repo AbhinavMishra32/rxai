@@ -1,61 +1,69 @@
 import image from './assets/image1.jpg';
 import google_logo from './assets/google.svg';
-import login_img from './assets/login.jpg';
+import login_img from './assets/login_1.png';
 import bg_image from './assets/bg_image.jpg';
 export default function App() {
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <img src={bg_image} className="object-contain" />
-        <div className="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0">
-          <div className="flex flex-col justify-center p-8 md:p-14 ">
-            <span className="mb-3 text-4xl font-bold">Welcome back</span>
-            <span className="font-light text-gray-400 mb-8">
+      <div className="flex items-center justify-center min-h-screen bg-gray-100 relative" style ={{backgroundImage: `url(${bg_image})`,  backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+        <div className="relative flex flex-col m-6 space-y-8 shadow-2xl rounded-2xl md:flex-row md:space-y-0 backdrop-blur-3xl bg-purple-400/5 ring-1 ring-zinc-600">
+          <div className="flex flex-col justify-center p-8 md:p-14">
+            <span className="mb-3 text-4xl text-white font-Unbounded">Welcome back</span>
+            <span className="font-light text-zinc-200 mb-8 font-Unbounded">
               Welcome back! Please enter your details
             </span>
-            <div className="py-4">
-              <span className="mb-2 text-md">
+            <div className="py-4 bg-transparent">
+              <span className="mb-2 text-md text-white font-Unbounded">
                 Email
               </span>
-              <input type="text" placeholder="name@email.com" className="w-full p-2 border border-gray-200 rounded-md placeholder:font-light placeholder:text-gray-500" name="email" id="email" />
+              <input type="text" placeholder="name@email.com" className="w-full mt-2 p-2 pl-6 border-gray-200 rounded-full placeholder:font-light placeholder:text-zinc-300 text-white bg-zinc-900/20 bg-transparent border border-zinc-300
+              transition-all ease-in-out
+              hover:bg-zinc-900/25 focus:bg-zinc-900/35 duration-300 hover:ring  ring-offset  ring-opacity-50 ring-zinc-300
+              focus:ring-[5px]" name="email" id="email" />
             </div>
             <div className="py-4">
-              <span className="mb-2 text-md">
+              <span className="mb-2 text-md text-white font-Unbounded">
                 Password
               </span>
-              <input type="password" placeholder="Password" name="pass" id="pass" className="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500" />
+              <input type="password" placeholder="Password" name="pass" id="pass" className="w-full mt-2 p-2 pl-6 border-gray-200 rounded-full placeholder:font-light placeholder:text-zinc-300 text-white bg-zinc-900/20 bg-transparent border border-zinc-300
+              transition-all ease-in-out
+              hover:bg-zinc-900/25 focus:bg-zinc-900/35 duration-300 hover:ring  ring-offset  ring-opacity-50 ring-zinc-300
+              focus:ring-[5px]" />
             </div>
             <div className="flex justify-between w-full py-4">
               <div className="mr-24">
                 <input type="checkbox" name="ch" id="ch" className="mr-2" />
-                <span className="text-md">
+                <span className="text-md text-white font-Unbounded">
                   Remember for 30 days
                 </span>
               </div>
 
-              <span className="font-bold text-md">
+              <span className="font-bold text-md text-white font-Unbounded">
                 Forgot password?
               </span>
             </div>
-            <button className="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300">Sign in</button>
-            <button className="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-black hover:text-white">
+            <button className="w-full bg-zinc-900/60 text-white font-Unbounded p-2 rounded-lg mb-6 border border-zinc-800
+            transition-all ease-in-out
+            hover:bg-zinc-900/50 hover:backdrop-blur-md hover:scale-105 duration-300 hover:ring  ring-offset  ring-opacity-50 ring-zinc-300
+            ">Sign in</button>
+            <button className="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 text-black bg-white">
               <img src={google_logo} alt="Google logo" className="w-6 h-6 inline mr-2" />
               Sign in with Google</button>
-            <div className="text-center text-gray-400">
+            <div className="text-center text-gray-400 font-Unbounded">
               Dont have an account?
-              <span className="font-bold text-black"> Sign up for free</span>
+              <span className="font-bold text-zinc-300"> Sign up for free</span>
             </div>
           </div>
           <div className="relative">
             <img src={login_img} alt="" className="w-[400px] h-full hidden rounded-r-2xl md:block object-cover" />
-          </div>
-          <div className="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30 backdrop-blur-sm rounded drop-shadow-lg md:block">
-            <span className="text-white text-xl">
+          <div className="absolute hidden bottom-10 right-6 p-6 m-10 bg-zinc-600 bg-opacity-30 backdrop-blur-md rounded-3xl drop-shadow-lg md:block">
+            <span className="text-white text-xl font-Unbounded">
               We&apos;ve been using Untitle to kick
               <br />
               start every new project and can&apos;t <br />
               imagine working without it.
             </span>
+          </div>
           </div>
 
         </div>
