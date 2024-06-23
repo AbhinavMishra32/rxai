@@ -1,24 +1,16 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
+import TodoCard from './TodoCard'
 
-
-export default function TodoList() {
-  let todo: string[] = [
-    'Learn React',
-    'Learn TypeScript',
-    'Build a Todo App'
-  ]
-
+export default function TodoList(props) {
+  const {todos: todos, } = props
+  
   return (
     <ul>
-      {todo.map((todo, todoIndex) => {
+      {todos.map((todos, todoIndex) => {
           return(
-            <li key = {todoIndex}>
-              <input type="checkbox" />
-              {todo}
-              <FontAwesomeIcon icon={faPenToSquare} />
-            </li>
+              <TodoCard {...props} key = {todoIndex} index = {todoIndex}>
+                <p>{todos}</p>
+              </TodoCard>
           )
       })}
     </ul>
