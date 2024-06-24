@@ -5,8 +5,8 @@ import bg_image from './assets/bg_image.jpg';
 export default function App() {
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen bg-gray-100 relative" style ={{backgroundImage: `url(${bg_image})`,  backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
-        <div className="relative flex flex-col m-6 space-y-8 shadow-2xl rounded-2xl md:flex-row md:space-y-0 backdrop-blur-3xl bg-purple-400/5 ring-1 ring-zinc-600">
+      <div className="flex items-center justify-center min-h-screen bg-gray-100 relative" style={{ backgroundImage: `url(${bg_image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+        <div className="relative flex flex-col m-6 space-y-8 shadow-2xl rounded-2xl md:flex-row md:space-y-0 backdrop-blur-3xl bg-purple-400/5 ring-1 ring-zinc-600/70">
           <div className="flex flex-col justify-center p-8 md:p-14">
             <span className="mb-3 text-4xl text-white font-Unbounded">Welcome back</span>
             <span className="font-light text-zinc-200 mb-8 font-Unbounded">
@@ -44,9 +44,10 @@ export default function App() {
             </div>
             <button className="w-full bg-zinc-900/60 text-white font-Unbounded p-2 rounded-lg mb-6 border border-zinc-800
             transition-all ease-in-out
-            hover:bg-zinc-900/50 hover:backdrop-blur-md hover:scale-105 duration-300 hover:ring  ring-offset  ring-opacity-50 ring-zinc-300
+            hover:bg-zinc-900/50 hover:backdrop-blur-md hover:scale-105  hover:ring  ring-offset  ring-opacity-50 ring-zinc-300
+            active:scale-100 active:backdrop-blur-md active:ring-opacity-10 cursor-pointer
             ">Sign in</button>
-            <button className="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 text-black bg-white">
+            <button className="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 text-black bg-white hover:ring">
               <img src={google_logo} alt="Google logo" className="w-6 h-6 inline mr-2" />
               Sign in with Google</button>
             <div className="text-center text-gray-400 font-Unbounded">
@@ -56,14 +57,14 @@ export default function App() {
           </div>
           <div className="relative">
             <img src={login_img} alt="" className="w-[400px] h-full hidden rounded-r-2xl md:block object-cover" />
-          <div className="absolute hidden bottom-10 right-6 p-6 m-10 bg-zinc-600 bg-opacity-30 backdrop-blur-md rounded-3xl drop-shadow-lg md:block">
-            <span className="text-white text-xl font-Unbounded">
-              We&apos;ve been using Untitle to kick
-              <br />
-              start every new project and can&apos;t <br />
-              imagine working without it.
-            </span>
-          </div>
+            <div className="absolute hidden bottom-10 right-6 p-6 m-10 bg-zinc-600 bg-opacity-30 backdrop-blur-md rounded-3xl drop-shadow-lg md:block">
+              <span className="text-white text-xl font-Unbounded">
+                We&apos;ve been using Untitle to kick
+                <br />
+                start every new project and can&apos;t <br />
+                imagine working without it.
+              </span>
+            </div>
           </div>
 
         </div>
