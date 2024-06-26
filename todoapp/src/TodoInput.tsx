@@ -4,7 +4,8 @@ import bg_image from './assets/bg_image.jpg';
 export default function TodoInput(props: any) {
   const { todoValue, setTodoValue, handleAddTodos } = props;
   return (
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <div className="flex justify-center overflow-x-hidden">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum, earum eum alias, soluta dolorum nostrum sed asperiores aliquam consequuntur beatae error ex provident odio molestiae quod harum voluptate porro?</p>
       <input
         value={todoValue}
         onChange={(e) => {
