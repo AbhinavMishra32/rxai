@@ -47,7 +47,7 @@ export default function App() {
 
   return (
     // <div className="flex items-center justify-center min-h-screen relative" style={{ backgroundImage: `url(${bg_image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
-    <div className=" min-h-screen bg-gradient-to-tr from-slate-950 to-indigo-950"
+    <div className="bg-stone-950 min-h-screen flex items-center justify-center relative"
     // style={{
     //   backgroundImage: `url(${bg_image})`,
     //   backgroundSize: 'cover',
@@ -55,8 +55,8 @@ export default function App() {
     //   backgroundAttachment: 'fixed'
     // }}>
     >
-      <div className="relative z-10 flex items-center justify-center">
-        <header className="fixed top-0 h-40 px-4">
+      <div className="bg-stone-900 p-10 rounded-3xl border border-stone-800 min-w-full">
+        <header className="">
           <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleAddTodos={handleAddTodos} />
         </header>
         <TodoList handleEditTodo={handleEditTodo} handleDeleteTodos={handleDeleteTodos} todos={todos} />

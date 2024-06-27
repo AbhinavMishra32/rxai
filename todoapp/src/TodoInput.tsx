@@ -4,18 +4,18 @@ import bg_image from './assets/bg_image.jpg';
 export default function TodoInput(props: any) {
   const { todoValue, setTodoValue, handleAddTodos } = props;
   return (
-    <div className="flex justify-center overflow-x-hidden">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum, earum eum alias, soluta dolorum nostrum sed asperiores aliquam consequuntur beatae error ex provident odio molestiae quod harum voluptate porro?</p>
+    <div className="flex justify-center items-center p-8 ">
+      {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptatum, earum eum alias, soluta dolorum nostrum sed asperiores aliquam consequuntur beatae error ex provident odio molestiae quod harum voluptate porro?</p> */}
       <input
         value={todoValue}
         onChange={(e) => {
           setTodoValue(e.target.value);
         }}
         placeholder="Enter todo..."
-        className="mt-2 p-2 border rounded-full outline-none w-[800px] size-[150px] text-center bg-black/30 " style={{ boxShadow: '0px 0px 128px -10px rgba(255,255,255,1)' }}
-      />
+        className="sm:w-3/5 placeholder:font-unbounded bg-stone-600 border border-stone-600 rounded-xl px-5 py-4 placeholder:text-stone-300 bg-gradient-to-tl from-stone-900 to-stone-600
+        " />
       <button
-        className="bg-blue-500 text-white px-4 py-2 ml-2 rounded-full hover:bg-blue-600 size-[150px] mt-2"
+        className=""
         onClick={() => {
           handleAddTodos(todoValue);
           setTodoValue('');
