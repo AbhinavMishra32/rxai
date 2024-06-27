@@ -21,7 +21,7 @@ export default {
           },
           "100%": {
             width: "100%"
-          }  
+          }
         },
         blink: {
           "50%": {
@@ -29,9 +29,9 @@ export default {
           },
           "100%": {
             borderColor: "white"
-          }  
+          }
         }
-      
+
       },
       fontFamily: {
         Unbounded: ["Unbounded", "sans-serif"],
@@ -47,7 +47,7 @@ export default {
       typing: `typing 2s steps(20) infinite alternate, blink .7s infinite`,
     }
   },
-  variants: { 
+  variants: {
     extend: {
       animation: ['hover'],
     }
