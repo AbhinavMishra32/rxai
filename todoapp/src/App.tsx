@@ -55,7 +55,7 @@ export default function App() {
     //   backgroundAttachment: 'fixed'
     // }}>
     >
-      <div className="bg-stone-900 p-10 rounded-3xl border border-stone-800 min-w-full">
+      <div className="bg-stone-900 p-10 rounded-3xl border border-stone-800 w-3/5">
         <header className="">
           <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleAddTodos={handleAddTodos} />
         </header>
