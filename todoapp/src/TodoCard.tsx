@@ -16,7 +16,7 @@ export default function TodoCard(props) {
                         <FontAwesomeIcon icon={faPenToSquare} className="bg-stone-500/40 p-2 flex rounded-lg border border-stone-300/30 mx-3 text-stone-300  hover:text-red-800 hover:shadow-xl hover:shadow-stone-600/40 transition-all ease-in-out" />
                     </button>
                     <button onClick={() => { handleDeleteTodos(index) }}>
-                        <FontAwesomeIcon icon={faTrashCan} className='bg-stone-500/40 p-2 flex rounded-lg border border-stone-300/30 mx-3 text-stone-300  hover:text-red-800 hover:shadow-xl hover:shadow-stone-600/40 transition-all ease-in-out' />
+                        <FontAwesomeIcon icon={faTrashCan} className='bg-stone-500/40 p-2 flex rounded-lg border border-stone-300/30 mx-3 text-stone-300 hover:text-red-800 hover:shadow-xl hover:shadow-stone-600/40 transition-all ease-in-out' />
                     </button>
                 </div>
             </div>
