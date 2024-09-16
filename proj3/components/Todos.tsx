@@ -1,9 +1,9 @@
 "use client";
 import { FC, useState } from "react";
 import { todoType } from "@/types/todoType";
-import Todo from "./todo";
-import AddTodo from "./addTodo";
-import { addTodo, deleteTodo, editTodo, toggleTodo } from "@/actions/todoAction";
+import Todo from "./Todo";
+import AddTodo from "./AddTodo";
+import { addTodo, deleteTodo, editTodo, toggleTodo } from "@/actions/todoActions";
 
 interface Props {
     todos: todoType[];
