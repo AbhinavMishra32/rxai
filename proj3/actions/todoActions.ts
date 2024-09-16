@@ -4,16 +4,16 @@ import { revalidatePath } from "next/cache";
 import db from "@/db/drizzle";
 import { todos } from "@/db/schema";
 
-export const getData = async () => {
-    const data = await db.select().from(todos);
+export const getData = async (userId: number) => {
+    const data = await db.select().from(todos).where(eq(todos?.userId, userId));
     return data;
 };
 
-export const addTodo = async (id: number, text: string) => {
+export const addTodo = async (id: number, text: string, userId: number) => {
     await db.insert(todos).values({
         id: id,
         text: text,
-        userId: 0, // Replace 0 with the appropriate user ID
+        userId,
     });
 };
 
