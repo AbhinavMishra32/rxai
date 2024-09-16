@@ -1,9 +1,7 @@
-import Image from "next/image";
+import { getData } from "@/actions/todoAction";
+import Todos from "@/components/todos";
 
-export default function Home() {
-  return (
-    <main className="">
-      k
-    </main>
-  );
+export default async function Home() {
+  const data = await getData();
+  return <Todos todos={data} />;
 }
