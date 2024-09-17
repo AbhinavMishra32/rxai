@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "commonjs",
     "target": "ES2020",
     "outDir": "./dist",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   },
   "include": [
-    "src/**/*.ts"
+    "**/*.ts"
   ],
   "exclude": [
     "node_modules"
