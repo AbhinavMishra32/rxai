@@ -1,12 +1,12 @@
 import { drizzle } from "drizzle-orm/node-postgres";
-import Client from "pg";
+import pg from "pg";
 
 const client = new pg.Client({
   host: "localhost",
   port: 5432,
   user: "postgres",
   password: "abhinav",
-  database: "drizzle-db",
+  database: "testdb",
 });
 
 console.log("Attempting to connect to Postgres...");
