@@ -1,0 +1,64 @@
+{
+  "node": {
+    "4acd2418339492d6303a136deb4a1238205c3f0b": {
+      "workers": {
+        "app/(public)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!",
+        "app/_not-found/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!",
+        "app/(public)/posts/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2F(public)%2Fposts%2F%5Bid%5D%2Factions.ts%22%2C%5B%22createComment%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!",
+        "app/(public)/posts/user/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!",
+        "app/(admin)/admin/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2F(admin)%2Fadmin%2Factions.ts%22%2C%5B%22updateUser%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Fsign-in%2Factions.ts%22%2C%5B%22signIn%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Fsign-up%2Factions.ts%22%2C%5B%22signUp%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!",
+        "app/(admin)/admin/posts/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2F(admin)%2Fadmin%2Fposts%2Factions.ts%22%2C%5B%22deletePostById%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(public)/page": "action-browser",
+        "app/_not-found/page": "action-browser",
+        "app/(public)/posts/[id]/page": "action-browser",
+        "app/(public)/posts/user/[id]/page": "action-browser",
+        "app/(admin)/admin/page": "action-browser",
+        "app/(admin)/admin/posts/page": "action-browser"
+      }
+    },
+    "00f719d6e8ddc9c1ef812a0c48b17a3f7b3fda51": {
+      "workers": {
+        "app/(public)/posts/[id]/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2F(public)%2Fposts%2F%5Bid%5D%2Factions.ts%22%2C%5B%22createComment%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(public)/posts/[id]/page": "action-browser"
+      }
+    },
+    "c4408e3300e687c0a8d04948a7155c170e40cb55": {
+      "workers": {
+        "app/(admin)/admin/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2F(admin)%2Fadmin%2Factions.ts%22%2C%5B%22updateUser%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Fsign-in%2Factions.ts%22%2C%5B%22signIn%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Fsign-up%2Factions.ts%22%2C%5B%22signUp%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(admin)/admin/page": "action-browser"
+      }
+    },
+    "f4378ad139b1975dbf53b5e78b38f005a360690a": {
+      "workers": {
+        "app/(admin)/admin/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2F(admin)%2Fadmin%2Factions.ts%22%2C%5B%22updateUser%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Fsign-in%2Factions.ts%22%2C%5B%22signIn%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Fsign-up%2Factions.ts%22%2C%5B%22signUp%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(admin)/admin/page": "action-browser"
+      }
+    },
+    "15938d7e17bd3ebefc71a7b24f03811b9bb899ae": {
+      "workers": {
+        "app/(admin)/admin/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2F(admin)%2Fadmin%2Factions.ts%22%2C%5B%22updateUser%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Fsign-in%2Factions.ts%22%2C%5B%22signIn%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Fsign-up%2Factions.ts%22%2C%5B%22signUp%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(admin)/admin/page": "action-browser"
+      }
+    },
+    "05adae1b093975777fda433b928ccf687eebe4ca": {
+      "workers": {
+        "app/(admin)/admin/posts/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2F(admin)%2Fadmin%2Fposts%2Factions.ts%22%2C%5B%22deletePostById%22%5D%5D%2C%5B%22%2FUsers%2Fabhinavmishra%2FCoding%2Frxai%2Fproj2%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22signOut%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(admin)/admin/posts/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "ejhU22knSr7IJp01xe4EJ46xo+g3O+QBUCRolBDH5Js="
+}
