@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
+  const [show, setShow] = useState(true);
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="flex flex-col gap-4 items-center justify-center h-screen w-screen">
+        <motion.div layout>
+          <motion.button
+            layout
+            transition={{ ease: "easeInOut" }}
+            className="my-10"
+            onClick={() => setShow(!show)}
+          >
+            Click
+          </motion.button>
+          <AnimatePresence>
+            {show && (
+              <motion.div
+                initial={{ scale: 0, rotate: 0 }}
+                animate={{ scale: 2, rotate: 360 }}
+                exit={{ scale: 0, rotate: 0 }}
+                transition={{ duration: 0.8, type: "spring" }}
+                layout
+                className="flex items-center justify-center w-10 h-10 bg-green-600 p-8"
+              >
+                hello
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
